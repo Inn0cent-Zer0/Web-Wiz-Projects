@@ -1,0 +1,70 @@
+/* Import the Poppins font family from Google Fonts with various font weights */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Apply general styles to all elements */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-family: "Poppins", sans-serif; /* Set the font family to Poppins, with sans-serif as a fallback */
+}
+
+/* Style for the body element */
+body {
+  height: 100vh; /* Set the height of the body to 100% of the viewport height */
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center items vertically within the body */
+  justify-content: center; /* Center items horizontally within the body */
+  background: #e0e3eb; /* Set the background color to a light grayish-blue */
+}
+
+/* Style for the container of the calculator */
+.container {
+  position: relative; /* Position relative to enable absolute positioning of child elements if needed */
+  max-width: 300px; /* Set the maximum width of the container to 300px */
+  width: 100%; /* Allow the container to take up 100% of its parent width */
+  border-radius: 12px; /* Round the corners of the container with a 12px radius */
+  padding: 10px 20px 20px; /* Add padding inside the container: 10px top, 20px left/right, 20px bottom */
+  background: #fff; /* Set the background color of the container to white */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); /* Add a subtle shadow for a lifted effect */
+}
+
+/* Style for the display area of the calculator */
+.display {
+  height: 80px; /* Set the height of the display area */
+  width: 100%; /* Make the display area take up 100% of the width of its container */
+  outline: none; /* Remove the default outline */
+  border: none; /* Remove the border */
+  text-align: right; /* Align text to the right */
+  margin-bottom: 10px; /* Add a margin below the display area */
+  font-size: 25px; /* Set the font size to 25px */
+  color: #000e1a; /* Set the text color to a dark blue */
+  pointer-events: none; /* Disable pointer events (e.g., clicks) to make it non-interactive */
+}
+
+/* Style for the buttons container */
+.buttons {
+  display: grid; /* Use CSS Grid layout */
+  grid-gap: 10px; /* Add a 10px gap between grid items */
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
+}
+
+/* Style for individual buttons within the buttons container */
+.buttons button {
+  padding: 10px; /* Add 10px padding inside the button */
+  border-radius: 6px; /* Round the corners of the button with a 6px radius */
+  border: none; /* Remove the border */
+  font-size: 20px; /* Set the font size to 20px */
+  cursor: pointer; /* Change the cursor to a pointer on hover to indicate it's clickable */
+  background-color: #eee; /* Set the background color of the button to a light gray */
+}
+
+/* Style for buttons when they are pressed */
+.buttons button:active {
+  transform: scale(0.99); /* Slightly shrink the button when it is pressed to create a pressed effect */
+}
+
+/* Style for operator buttons */
+.operator {
+  color: #2f9fff; /* Set the text color of operator buttons to a bright blue */
+}
