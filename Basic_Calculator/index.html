@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8" />
+    <!-- Ensures proper rendering and touch zooming for different devices -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Sets the viewport to scale for different device widths -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page displayed in the browser tab -->
+    <title>Calculator</title>
+    <!-- Link to external CSS file for styling the calculator -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <!--This is my first HTML Project by watching YouTube Video -->
+    <!-- I learned to code this from the below YouTube Video from https://youtu.be/cHkN82X3KNU -->
+    
+    <!-- Container for the calculator UI -->
+    <div class="container">
+      <!-- Input field for displaying calculations and results -->
+      <input type="text" class="display" />
+      
+      <!-- Div for holding calculator buttons -->
+      <div class="buttons">
+        <!-- Button for clearing all inputs -->
+        <button class="operator" data-value="AC">AC</button>
+        <!-- Button for deleting the last input character -->
+        <button class="operator" data-value="DEL">DEL</button>
+        <!-- Button for percentage operation -->
+        <button class="operator" data-value="%">%</button>
+        <!-- Button for division operation -->
+        <button class="operator" data-value="/">/</button>
+        
+        <!-- Numeric buttons 7 to 9 -->
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <!-- Button for multiplication operation -->
+        <button class="operator" data-value="*">*</button>
+        
+        <!-- Numeric buttons 4 to 6 -->
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <!-- Button for subtraction operation -->
+        <button class="operator" data-value="-">-</button>
+        
+        <!-- Numeric buttons 1 to 3 -->
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <!-- Button for addition operation -->
+        <button class="operator" data-value="+">+</button>
+        
+        <!-- Numeric button 0 -->
+        <button data-value="0">0</button>
+        <!-- Numeric button 00 for entering double zero -->
+        <button data-value="00">00</button>
+        <!-- Button for decimal point -->
+        <button data-value=".">.</button>
+        <!-- Button for evaluating the expression -->
+        <button class="operator" data-value="=">=</button>
+      </div>
+    </div>
+    
+    <!-- Link to external JavaScript file for calculator functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>
